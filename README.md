@@ -164,16 +164,12 @@ La salida se devuelve en formato **JSON** y se almacena en un **DataFrame de pan
 
 ---
 
-# Ejemplo de salida
+ # Ejemplo salida
 
-| file_name      | llm_output                                  |
-| -------------- | ------------------------------------------- |
-| 2018_SE_BLEDALES_BCS.pdf | {
-"nombre_documento": "2018_SE_BLEDALES_BCS.pdf",
-"datos_sitio": {...}}|
-| 2018_SE_SANTIAGO_BCS.pdf | {
-  "nombre_documento": "2018_SE_SANTIAGO_BCS.pdf",
-  "datos_sitio": {...}} |
+| file_name                | llm_output                                                                              |
+|-------------------------|-------------------------------------------------------------------------------------------|
+| 2018_SE_BLEDALES_BCS.pdf | {"nombre_documento":"2018_SE_BLEDALES_BCS.pdf","datos_sitio":{...}}                      |
+| 2018_SE_SANTIAGO_BCS.pdf | {"nombre_documento":"2018_SE_SANTIAGO_BCS.pdf","datos_sitio":{...}}                      |
 
 ---
 
