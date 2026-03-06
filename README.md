@@ -170,22 +170,10 @@ La salida se devuelve en formato **JSON** y se almacena en un **DataFrame de pan
 | -------------- | ------------------------------------------- |
 | 2018_SE_BLEDALES_BCS.pdf | {
 "nombre_documento": "2018_SE_BLEDALES_BCS.pdf",
-"datos_sitio": {
-"altitud (msnm)": "15.0",
-"tipo de suelo": null,
-"coef_sismico": "amax=29 cm/s2",
-"coordenadas": {
-"latitud": "24.085793",
-"longitud": "-110.341552",...}}}|
+"datos_sitio": {...}}|
 | 2018_SE_SANTIAGO_BCS.pdf | {
   "nombre_documento": "2018_SE_SANTIAGO_BCS.pdf",
-  "datos_sitio": {
-    "altitud (msnm)": "215",
-    "tipo de suelo": null,
-    "coef_sismico": "Zona sísmica C, amax = 29 cm/s2 (Prodisis CFE 2015)",
-    "coordenadas": {
-      "latitud": "23.472505",
-      "longitud": "-109.695071",...}}} |
+  "datos_sitio": {...}} |
 
 ---
 
