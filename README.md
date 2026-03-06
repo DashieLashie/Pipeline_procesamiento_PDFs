@@ -140,11 +140,11 @@ Una vez que el texto del documento ha sido extraído, se envía a un **modelo de
 
 El modelo identifica y extrae información relevante, por ejemplo:
 
-* tipo de documento
-* organización
-* fecha
-* monto total
-* resumen del documento
+* datos del sitio
+* clasificación del suelo
+* contenidos de humedad
+* límites de consistencia
+* grados de saturación
 
 La salida se devuelve en formato **JSON** y se almacena en un **DataFrame de pandas**.
 
@@ -168,8 +168,24 @@ La salida se devuelve en formato **JSON** y se almacena en un **DataFrame de pan
 
 | file_name      | llm_output                                  |
 | -------------- | ------------------------------------------- |
-| factura_01.pdf | { "document_type": "...", "date": "..."}    |
-| reporte_02.pdf | { "document_type": "...", "summary": "..."} |
+| 2018_SE_BLEDALES_BCS.pdf | {
+"nombre_documento": "2018_SE_BLEDALES_BCS.pdf",
+"datos_sitio": {
+"altitud (msnm)": "15.0",
+"tipo de suelo": null,
+"coef_sismico": "amax=29 cm/s2",
+"coordenadas": {
+"latitud": "24.085793",
+"longitud": "-110.341552",...}}}|
+| 2018_SE_SANTIAGO_BCS.pdf | {
+  "nombre_documento": "2018_SE_SANTIAGO_BCS.pdf",
+  "datos_sitio": {
+    "altitud (msnm)": "215",
+    "tipo de suelo": null,
+    "coef_sismico": "Zona sísmica C, amax = 29 cm/s2 (Prodisis CFE 2015)",
+    "coordenadas": {
+      "latitud": "23.472505",
+      "longitud": "-109.695071",...}}} |
 
 ---
 
